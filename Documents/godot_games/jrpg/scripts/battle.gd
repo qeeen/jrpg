@@ -1,5 +1,7 @@
 extends Node
 
+var activeUnit;
+
 enum Turn{
 	one = 0,
 	two = 1,
@@ -28,10 +30,10 @@ func nextTurn():
 		
 		
 func _process(delta):
-	var activeUnit =  Controller.turnOrder[currentTurn]
-	if activeUnit == "enemy":
+	activeUnit =  Controller.turnOrder[currentTurn]
+	if activeUnit != "player":
 		timer -= 1
 		if timer == 0:
-			timer = 60
-			Controller.enemy_attack()
+			timer = 40
+			Controller.send(activeUnit + "_turn")
 			nextTurn()

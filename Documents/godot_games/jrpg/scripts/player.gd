@@ -5,9 +5,9 @@ const SLWDWN = 100
 var v = Vector2()
 var dir = "down"
 
-var inventory = []
-var spells = []
-var damage = 20
+var inventory = ["もどる"]
+var skills = ["もどる", "charge"]
+var damage = 50
 var health = 100
 var level = 1
 var xp = 0
@@ -31,6 +31,17 @@ func _physics_process(delta):
 			take_input()
 		State.inBattle:
 			pass
+		#State.always:
+			level_up()
+		
+
+func level_up():
+	if xp >= int(pow(2.0,level-1)*150.0 + 200):
+		level += 1
+	match level:
+		3:
+			skills.append("heal")
+	
 
 func take_input():
 	var left = Input.is_action_pressed('ui_left')
@@ -65,7 +76,7 @@ func take_input():
 		v.y = sign(v.y)*MXSPD
 	
 	if debug_key:
-		get_tree().reload_current_scene()
+		print(str(xp) + " " + str(level) + " " + str(int(pow(2.0,level-1)*150.0 + 200)))
 
 func dir_loop():
 	var sign_v = Vector2(sign(v.x),sign(v.y))

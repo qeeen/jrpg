@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://scripts/listMenu.gd" type="Script" id=1]
 [ext_resource path="res://scripts/lab.gd" type="Script" id=2]
+[ext_resource path="res://fonts/catcafe.tres" type="DynamicFont" id=3]
 
 [sub_resource type="StreamTexture" id=1]
 flags = 4
@@ -11,13 +12,12 @@ load_path = "res://.import/mmmmm.png-064c503af634efee6c36c4f4b34bc088.stex"
 script = ExtResource( 1 )
 
 [node name="bg" type="Sprite" parent="."]
-position = Vector2( 2.86389, 300.714 )
+position = Vector2( 3.10172, 300.714 )
 scale = Vector2( 3.39617, 1 )
 texture = SubResource( 1 )
 centered = false
 
 [node name="lab1" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 14.0
 margin_top = 316.0
 margin_right = 187.0
@@ -27,9 +27,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab1"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.501961, 0.00784314, 1, 1 )
 
 [node name="lab2" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 827.361
 margin_top = 530.796
 margin_right = 1000.36
@@ -39,9 +40,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab2"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab3" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 656.956
 margin_top = 533.66
 margin_right = 829.956
@@ -51,9 +53,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab3"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab4" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 440.728
 margin_top = 539.388
 margin_right = 613.728
@@ -63,9 +66,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab4"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab5" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 241.684
 margin_top = 532.228
 margin_right = 414.684
@@ -75,9 +79,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab5"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab6" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 15.432
 margin_top = 535.092
 margin_right = 188.432
@@ -87,9 +92,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab6"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab7" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 843.112
 margin_top = 456.333
 margin_right = 1016.11
@@ -99,9 +105,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab7"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab8" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 658.388
 margin_top = 447.742
 margin_right = 831.388
@@ -111,9 +118,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab8"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab9" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 416.384
 margin_top = 444.878
 margin_right = 589.384
@@ -123,9 +131,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab9"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab10" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 247.412
 margin_top = 450.605
 margin_right = 420.412
@@ -135,9 +144,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab10"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab11" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 12.568
 margin_top = 457.765
 margin_right = 185.568
@@ -147,9 +157,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab11"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab12" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 827.361
 margin_top = 400.486
 margin_right = 1000.36
@@ -159,9 +170,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab12"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab13" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 595.381
 margin_top = 394.759
 margin_right = 768.381
@@ -171,9 +183,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab13"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab14" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 406.361
 margin_top = 400.486
 margin_right = 579.361
@@ -183,9 +196,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab14"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab15" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 203.02
 margin_top = 399.054
 margin_right = 376.02
@@ -195,9 +209,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab15"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab16" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 18.296
 margin_top = 396.19
 margin_right = 191.296
@@ -207,9 +222,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab16"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab17" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 827.36
 margin_top = 308.84
 margin_right = 1000.36
@@ -219,9 +235,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab17"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab18" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 601.109
 margin_top = 310.272
 margin_right = 774.109
@@ -231,9 +248,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab18"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab19" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 412.088
 margin_top = 311.704
 margin_right = 585.088
@@ -243,9 +261,10 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab19"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 
 [node name="lab20" type="TextureButton" parent="."]
-editor/display_folded = true
 margin_left = 235.956
 margin_top = 321.728
 margin_right = 408.956
@@ -255,4 +274,6 @@ script = ExtResource( 2 )
 [node name="Label" type="Label" parent="lab20"]
 margin_right = 40.0
 margin_bottom = 14.0
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.458824, 0.0980392, 0.988235, 1 )
 

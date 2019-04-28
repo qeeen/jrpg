@@ -10,4 +10,4 @@ func entered(body):
 	if body.is_in_group("player") and true if randi()%chances+1 == 1 else false:
 		var player = get_node("../../player")
 		player.status = player.State.inBattle
-		Controller.enter_battle("test")
+		Controller.enter_battle("test", "test", "test")
